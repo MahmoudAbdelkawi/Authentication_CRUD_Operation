@@ -9,3 +9,6 @@ Authentication_CRUD_Operation_Test/obj/
 
 # Ignore solution file if needed
 Authentication_CRUD_Operation.sln
+
+
+Authentication_CRUD_Operation/Migrations/

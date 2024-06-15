@@ -9,7 +9,7 @@ using System.Net;
 using System.Security.Claims;
 using System.Text;
 
-namespace Authentication_CRUD_Operation.Repository
+namespace Authentication_CRUD_Operation.Repository.Users
 {
     public class UserRepository : IUserRepository
     {
@@ -79,7 +79,7 @@ namespace Authentication_CRUD_Operation.Repository
                 };
             }
 
-           var result = await _userManager.CreateAsync(user, password);
+            var result = await _userManager.CreateAsync(user, password);
 
             if (!result.Succeeded)
             {
