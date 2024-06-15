@@ -1,0 +1,5 @@
+.vs
+./Authentication_CRUD_Operation/bin
+./Authentication_CRUD_Operation/migrations
+Authentication_CRUD_Operation/obj/Debug/
+./Authentication_CRUD_Operation.sln

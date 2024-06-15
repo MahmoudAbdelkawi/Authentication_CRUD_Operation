@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Authentication_CRUD_Operation", "Authentication_CRUD_Operation\Authentication_CRUD_Operation.csproj", "{9431406A-C98E-40B0-B31C-4EBCAF5DA00A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication_CRUD_Operation_Test", "Authentication_CRUD_Operation_Test\Authentication_CRUD_Operation_Test.csproj", "{B067D3E6-D6BF-42F0-AA01-825714C6AA3F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9431406A-C98E-40B0-B31C-4EBCAF5DA00A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9431406A-C98E-40B0-B31C-4EBCAF5DA00A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9431406A-C98E-40B0-B31C-4EBCAF5DA00A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9431406A-C98E-40B0-B31C-4EBCAF5DA00A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B067D3E6-D6BF-42F0-AA01-825714C6AA3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B067D3E6-D6BF-42F0-AA01-825714C6AA3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B067D3E6-D6BF-42F0-AA01-825714C6AA3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B067D3E6-D6BF-42F0-AA01-825714C6AA3F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F50F0701-7D60-4BA5-9CCE-807D692EB552}
+	EndGlobalSection
+EndGlobal
