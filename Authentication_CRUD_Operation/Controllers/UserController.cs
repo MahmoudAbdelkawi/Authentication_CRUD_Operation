@@ -1,7 +1,7 @@
 ﻿using Authentication_CRUD_Operation.Dtos;
 using Authentication_CRUD_Operation.enums;
 using Authentication_CRUD_Operation.Globals;
-using Authentication_CRUD_Operation.Repository;
+using Authentication_CRUD_Operation.Repository.Users;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;

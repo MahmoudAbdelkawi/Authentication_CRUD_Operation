@@ -22,6 +22,33 @@ namespace Authentication_CRUD_Operation.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Authentication_CRUD_Operation.Model.Employee", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("getdate()");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("Salary")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Employees");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -51,13 +78,13 @@ namespace Authentication_CRUD_Operation.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "31f00c20-d587-4b12-bacf-f97586930b14",
+                            Id = "c68a5b2d-c721-4896-814d-d5d38959025c",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "5c986db4-5cbd-48b9-94a1-51c8d9ae5fb6",
+                            Id = "17199a5f-c08d-4911-9971-323b8d9d61ec",
                             Name = "User",
                             NormalizedName = "USER"
                         });
