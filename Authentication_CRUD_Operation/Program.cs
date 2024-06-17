@@ -98,4 +98,26 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+// update database when the app starts
+using var scope = app.Services.CreateScope();
+
+var services = scope.ServiceProvider;
+
+var loggerFactory = services.GetRequiredService<ILoggerFactory>();
+
+var logger = loggerFactory.CreateLogger("app");
+
+try
+{
+    var context = services.GetRequiredService<ApplicationDbContext>();
+    await context.Database.MigrateAsync();
+    logger.LogInformation("Seeding data");
+    logger.LogInformation("Application starts");
+}
+catch (Exception ex)
+{
+    logger.LogError(ex, "An error occurred during migration");
+}
+
+
 app.Run();
