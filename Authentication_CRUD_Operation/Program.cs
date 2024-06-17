@@ -76,11 +76,17 @@ var app = builder.Build();
 
 app.UseMiddleware<ExceptionMiddleware>();
 
-if (app.Environment.IsDevelopment())
-{
+//if (app.Environment.IsDevelopment())
+//{
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+//}
+
+// add cors
+app.UseCors(x => x
+    .AllowAnyOrigin()
+       .AllowAnyMethod()
+          .AllowAnyHeader());
 
 app.UseHttpsRedirection();
 
